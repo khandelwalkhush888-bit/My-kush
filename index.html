@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kush Media - Share & Chat</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>📸 Kush Media</h1>
+    <nav>
+      <button id="uploadBtn">Upload</button>
+      <button id="chatBtn">Live Chat</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="upload-section">
+      <h2>Upload Photos & Videos</h2>
+      <input type="file" id="fileInput" accept="image/*,video/*">
+      <button id="submitFile">Upload</button>
+      <div id="gallery"></div>
+    </section>
+
+    <section class="chat-section">
+      <h2>💬 Live Chat</h2>
+      <div id="chatBox"></div>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Type a message...">
+        <button id="sendBtn">Send</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🔥 Powered by Firebase | Designed by Kush</p>
+  </footer>
+</body>
+</html>

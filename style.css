@@ -1,0 +1,107 @@
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: rgba(0,0,0,0.6);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(8px);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #ffb400;
+}
+
+nav button {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ffb400;
+  color: #000;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  background: #ff8800;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.upload-section, .chat-section {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+}
+
+#gallery img, #gallery video {
+  width: 100%;
+  max-height: 200px;
+  margin-top: 1rem;
+  border-radius: 10px;
+}
+
+#chatBox {
+  background: rgba(0,0,0,0.4);
+  height: 300px;
+  overflow-y: auto;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#chatBox p {
+  margin: 0.5rem 0;
+  background: #444;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.chat-input {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+}
+
+.chat-input button {
+  background: #ffb400;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+footer {
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  padding: 1rem;
+}
